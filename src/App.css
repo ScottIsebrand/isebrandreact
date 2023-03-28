@@ -1,15 +1,99 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(180deg, #00171f 0, #003459);
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.navbar > .nav-header {
+  display: inline;
+}
+
+.navbar > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 15px 10px 10px 10px;
+}
+
+.navbar > .nav-btn {
+  display: none;
+}
+
+.navbar > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbar > .nav-links > .navlink {
+  display: inline-block;
+  padding: 25px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.navbar > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.navbar > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar > .nav-btn > label:hover,
+  .navbar #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navbar > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .navbar > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }
 
