@@ -34,13 +34,11 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 ### Design
 
-**Navbar**
+- Adhikary, Tapas. "[3 quick ways to add fonts to your React app](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app)." GreenRoots Blog (via Hashnode).
 
-- Jones Joseph. [Pure CSS Responsive Navbar](https://codepen.io/jo_Geek/pen/xgbaEr). Codepen.io.
+- Endrész, Mária. [Basic Element vector graphic](https://pixabay.com/vectors/basic-element-earth-air-water-fire-1663243/). Pixabay. (Free use license.)
 
-**Adding Fonts**
-
-- Tapas Adhikary. "[3 quick ways to add fonts to your React app](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app)." GreenRoots Blog (Hashnode).
+- Joseph, Jones Vinoth. [Pure CSS Responsive Navbar](https://codepen.io/jo_Geek/pen/xgbaEr). Codepen.io.
 
 ### README.md
 
