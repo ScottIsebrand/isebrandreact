@@ -1,8 +1,14 @@
 function Home() {
   return (
-    <div>
-      <h1>Scott Isebrand</h1>
-    </div>
+    <main>
+      <div className="home-container">
+        <h1 className="home-headline">Hello, my name is Scott Isebrand</h1>
+        <h2 className="home-subheadline">
+          I am a software developer with knowledge of HTML5, CSS, JavaScript,
+          React, MongoDB, Express, and Node.js.
+        </h2>
+      </div>
+    </main>
   );
 }
 

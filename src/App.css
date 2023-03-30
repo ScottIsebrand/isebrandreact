@@ -4,12 +4,21 @@
 .navbar {
   height: 70px;
   width: 100%;
-  background: linear-gradient(180deg, #00171f 0, #003459);
+  background: linear-gradient(180deg, #00171f 0, #007ea7);
   position: relative;
 }
 
 .navbar > .nav-header {
   display: inline;
+}
+
+.navbar > .nav-header > .logo-link img {
+  height: 68px;
+  border: 1px solid #00171f;
+}
+
+.navbar > .nav-header > .logo-link img a:hover {
+  border: 1px solid #00a8e8;
 }
 
 .navbar > .nav-header > .nav-title {
@@ -37,13 +46,22 @@
 }
 
 .navbar > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #00a8e8;
 }
 
-@media (max-width: 600px) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-container {
+  background-color: #007ea7;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.home-headline {
+  margin-bottom: 1rem;
+}
+
+.home-subheadline {
+  margin: auto 10%;
 }
 
 .navbar > #nav-check {
@@ -97,6 +115,16 @@
   }
 }
 
+.home-headline {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-size: 2rem;
+}
+
+.home-subheadline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -110,6 +138,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #007ea7, #00171f);
 }
 
 @keyframes App-logo-spin {
