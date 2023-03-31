@@ -1,7 +1,6 @@
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.35;
 }
 
@@ -16,11 +15,11 @@ h1 {
 
 a:link {
   text-decoration: none;
-  color: #00a8e8;
+  color: #007ea7;
 }
 a:visited {
   text-decoration: none;
-  color: #00a8e8;
+  color: #007ea7;
 }
 a:hover {
   text-decoration: underline;
@@ -44,10 +43,10 @@ a:active {
 
 .navbar > .nav-header > .logo-link img {
   height: 68px;
-  border: 1px solid #00171f;
+  border: 1px solid transparent;
 }
 
-.navbar > .nav-header > .logo-link img a:hover {
+.navbar > .nav-header > .logo-link :hover {
   border: 1px solid #00a8e8;
 }
 
@@ -168,7 +167,12 @@ a:active {
 }
 
 .footerlink > img {
-  height: 40px;
+  height: 39px;
+  border: 1px solid transparent;
+}
+
+.footer > .footer-links > .footerlink :hover {
+  border: 1px solid #00a8e8;
 }
 
 .home-subheadline {
@@ -176,20 +180,39 @@ a:active {
   font-size: 28px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  background: #007ea7;
+  color: #f9fafe;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 3px 5px #cdcdd0;
+}
+
+.back-to-top:hover {
+  background: #00a8e8;
+}
+
 .projects,
-.about {
+.about,
+.onthisday {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects-container {
+.projects-container,
+.about-container,
+.onthisday-container {
   border-radius: 20px;
   padding: 0 45px;
   background-color: #f9fafe;
   max-width: 1170;
   margin: 0;
-  font-family: 'EB Garamond', serif;
 }
 
 .dueling-wizards {

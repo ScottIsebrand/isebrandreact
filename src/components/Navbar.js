@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/sji-ident-black-trimmed.jpg';
+import Logo from '../assets/SJI-ident-transparent-trimmed.png';
 
 function Navbar() {
   return (
@@ -31,6 +31,10 @@ function Navbar() {
 
         <Link className="navlink" to="/about">
           About
+        </Link>
+
+        <Link className="navlink" to="/onthisday">
+          #OTD
         </Link>
       </div>
     </div>

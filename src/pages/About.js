@@ -1,75 +1,122 @@
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
-  // Creating a state variable to hold the historical event data
-  const [events, setEvents] = useState([]);
-  // Creating object (dictionary/library) named 'months' to find name of current month
-  const monthsNames = {
-    0: 'January',
-    1: 'February',
-    2: 'March',
-    3: 'April',
-    4: 'May',
-    5: 'June',
-    6: 'July',
-    7: 'August',
-    8: 'September',
-    9: 'October',
-    10: 'November',
-    11: 'December',
-  };
-
-  // Function to get data from api ???
-  let today = new Date();
-  // today.getMonth() returns a number, 0 thru 11; January is 0
-  let month = String(today.getMonth() + 1).padStart(2, '0');
-  let day = String(today.getDate()).padStart(2, '0');
-  let url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/events/${month}/${day}`;
-  const token =
-    'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxNGUyZTEzMzkyNjk5NzFlMjQ2ZmNiZGU4ZGM3ZTBlZCIsImp0aSI6IjQ2OTkwNjA4ZTdlZTgxZDJjYjUwYzliM2JmYzI2MGFmZjc5YzU1OTRmMjc4YjMxYTdjOWY4Y2ZlMmJhY2ZlYmYxNmJhMGQzZDM1ODNkNWJkIiwiaWF0IjoxNjgwMTkxNDA4Ljg1NTYyMSwibmJmIjoxNjgwMTkxNDA4Ljg1NTYyNCwiZXhwIjozMzIzNzEwMDIwOC44NTM0MjgsInN1YiI6IjcyNDIyNDQyIiwiaXNzIjoiaHR0cHM6Ly9tZXRhLndpa2ltZWRpYS5vcmciLCJyYXRlbGltaXQiOnsicmVxdWVzdHNfcGVyX3VuaXQiOjUwMDAsInVuaXQiOiJIT1VSIn0sInNjb3BlcyI6WyJiYXNpYyJdfQ.wADBxwLoImqfqBigXlw4RwTHQMZ6XEVEpy6pdJ-BSfXM6rboEazawym3E_KP9u_ZAZxXWLMKuylT8KjGFFbwWpNL4Nfyw-iJioL8qZSErRFs5juF_j5PDTaBEjSclz0hv17VEvV7-SdS0z5or4lZqM5Qgh6R3id5lo3ht8F-Vh27FlDkc-f6UwkLQcJRlA9cCsx6T75GgJioPFQWxYrZSTFoh0RSRMZsedknIdyH3reXDbe4WY7bRrKtBWynSuEcAtdR618-jdkevbplvsYwRewqibb7Z1qPVzgJ7XFwQ6kYbLobqCHmLkjjLU6athbpEDKW9cTR_uKvP-7XxJXNJm0gGJoviOpyykvgvaOKNQbTb2PMUitMZE5Q8G3zamiOhN84QF-vsbYIPtBt2uodMI2XlM9SaXOq6SrFJKbgqloLlBa5dQjPHGwQHQT61Q9zlVioC5cOkSdN3Akf5q-kRDuOoSmGdwcqzxUiWB9ic3NmjeX0cPTDJhsgs4ELzorAVdKARiVhM4HXDbeX4rEZvLvKTaWN53yOsF36uGLwERfFznkPZMttGh2qMu2pDzjXOlKn-tL8lxAjnXcNPnNxrCC8vYR8ly7ZPQjUhZ_LezY1e744AdUPhT0S0Bd29LH4WFIorZP23vnxcLeioiZFS30Y7zVDNkCJJdLQGs84qEg';
-
-  useEffect(() => {
-    const fetchData = async () => {
-      let response = await fetch(url, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Api-User-Agent':
-            'isebrandreact (https://benevolent-youtiao-efa0f5.netlify.app/)',
-        },
-      });
-
-      const data = await response.json();
-      console.log(data);
-      setEvents(data.events);
-    };
-    fetchData();
-  }, [url]);
-
-  // Function to return JSX if we have data in state ???
-  // const loading = () => <h1>Loading...</h1>;
-
   return (
     <div className="about">
       <div className="page-title">
         <h1>About</h1>
       </div>
-
-      <div className="on-this-day">
-        <h2 className="on-this-day-subheadline">
-          Historical Events On this Day - {monthsNames[today.getMonth()]} {day}
-        </h2>
-        {/* If events array is empty, render loading message */}
-        {events.length === 0 ? (
-          <h1>Please wait while data is loading...</h1>
-        ) : (
-          events.map((event, index) => {
-            return (
-              <p key={index}>
-                {event.year}: {event.text}
-              </p>
-            );
-          })
-        )}
+      <div className="about-container">
+        <p>
+          My Name is Scott Isebrand. I am currently completing a rigorous,
+          immersive Software Engineering boot camp at Per Scholas in New York
+          City to become a full-stack engineer, acquiring skills in HTML5, CSS,
+          JavaScript, Git, and the MERN stack of MongoDB, Express, React,
+          Node.js.
+        </p>
+        <p>
+          I am looking for opportunities to bring my developer skills and
+          previous work experience together to be a productive part of a
+          front-end team.
+        </p>
+        <p>
+          Before my transition to tech, I worked as a marketer first in
+          educational publishing and then for a special events venue and
+          production company, later serving as that company's Chief Operating
+          Officer.
+        </p>
+        <p>
+          I oversaw the production of the company's website--plotting its page
+          structure, writing all of its copy, and working with the developers
+          from start to finish. In the process, I learned the WordPress skills
+          to maintain and update the website going forward.
+        </p>
+        <p>
+          As COO, I coordinated the three-person management team, working to
+          drive the team towards consensus and communicating closely on a daily
+          basis with ownership in writing and verbally, consistently
+          demonstrating strong adherence to confidentiality. I also oversaw IT,
+          HR, government relations, and insurance matters, and wrote and
+          maintained the company's Standard Operating Procedures.
+        </p>
+        <hr></hr>
+        <div className="hobbies">
+          <h2>Hobbies and Interests</h2>
+        </div>
+        <p>
+          Besides software development, I am also interested in history, early
+          and classical music, British history and politics, and art and
+          architecture. I strongly considered a career as a historian, and
+          earned a master's degree from Yale University towards that end. My
+          studies focused heavily on ecclesiastical history, including sacred
+          art and architecture.
+        </p>
+        <p>
+          In college, I interned at the House of Commons of the United Kingdom
+          as a Research Assistant for the Labour Party Spokesman on Trade and
+          Industry and subsequently as an assistant to the Bishop of London's
+          Chaplain to the Homeless (Church of England). I have been to the U.K.
+          several times since then and always enjoy spending time with my
+          friends there. I am a member of the{' '}
+          <Link
+            className="text-link-regular"
+            to="https://www.stgeorgessociety.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            St. George's Society of New York City
+          </Link>
+          , one of the city's oldest registered charities (est. 1770), and the
+          New York branch of the
+          <Link
+            className="text-link-regular"
+            to="https://www.esuus.org/newyork/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {' '}
+            English-Speaking Union
+          </Link>
+          .
+        </p>
+        <p>
+          I am also interested in the American Civil War. I recently launched a
+          website at GrantRevealed.com, about Ulysses S. Grant, Civil War
+          general and 18th President of the United States. I am a member of the{' '}
+          <Link
+            className="text-link-regular"
+            to="https://grantstomb.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Grant Monument Association
+          </Link>{' '}
+          and a supporter of the{' '}
+          <Link
+            className="text-link-regular"
+            to="https://www.grantcottage.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ulysses S. Grant Cottage National Historic Landmark
+          </Link>
+          .
+        </p>
+        <p>
+          In my free time if I'm not listening to history or BBC Radio 4
+          podcasts, I am probably either with my partner and eating out with
+          friends, watching sci-fi, fantasy, or British shows or movies, or
+          perusing Instagram accounts featuring landscape, wildlife, or
+          architecture photography.{' '}
+        </p>
+        <hr></hr>
+        <div className="on-this-day">
+          <h2 className="on-this-day-subheadline">On This Day (#OTD)</h2>
+          <p>
+            Head to my <Link to="/onthisday">On This Day page</Link> to discover
+            some of the significant events that occurred on this day in history.
+          </p>
+        </div>
       </div>
     </div>
   );

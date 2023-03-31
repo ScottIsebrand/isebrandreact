@@ -13,7 +13,6 @@ function Portfolio() {
           <h2>Dueling Wizards</h2>
         </div>
         <Link
-          className="dueling-wizards-link"
           to="https://scottisebrand.github.io/dueling-wizards/"
           target="_blank"
           rel="noreferrer"
@@ -26,7 +25,6 @@ function Portfolio() {
         </Link>
         <p>
           <Link
-            className="dueling-wizards-link"
             to="https://scottisebrand.github.io/dueling-wizards/"
             target="_blank"
             rel="noreferrer"
@@ -50,17 +48,11 @@ function Portfolio() {
         <div className="grant-revealed">
           <h2>GrantRevealed.com</h2>
         </div>
-        <Link
-          className="grant-revealed-link"
-          to="https://grantrevealed.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link to="https://grantrevealed.com/" target="_blank" rel="noreferrer">
           <img className="grant-image" src={Grant} alt="Ulysses S. Grant" />
         </Link>
         <p>
           <Link
-            className="grant-revealed-link"
             to="https://grantrevealed.com/"
             target="_blank"
             rel="noreferrer"
@@ -70,6 +62,18 @@ function Portfolio() {
           is a WordPress-based website and blog exploring the life and times of
           Ulysses S. Grant, the Commanding General of the U.S. Army during the
           American Civil War and later 18th President of the United States.
+        </p>
+        <p>
+          During the war, Grant became the first officer since George Washington
+          to attain the rank of lieutenant general.
+        </p>
+
+        <p>
+          As President, Grant suppressed the Ku Klux Klan in the South and
+          signed into law the Civil Rights Act of 1875. According to Princeton
+          professor Sean Wilentz, Grant "created the most auspicious record on
+          racial equality and civil rights of any president from Lincoln to
+          Lyndon B. Johnson."
         </p>
       </div>
     </div>

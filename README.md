@@ -40,6 +40,8 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 - [Favicon](https://favicon.io/).
 
+- Goodman, A. "[How to Create a Scroll To Top Button in React](https://www.kindacode.com/article/how-to-create-a-scroll-to-top-button-in-react/)." KindaCode.com.
+
 - Joseph, Jones Vinoth. [Pure CSS Responsive Navbar](https://codepen.io/jo_Geek/pen/xgbaEr). Codepen.io.
 
 - Pixel Bazaar. [Footer icons (via Iconfinder.com)](https://www.iconfinder.com/search/icons?family=flatilicious).
