@@ -1,11 +1,36 @@
-.App {
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #00a8e8;
+}
+a:visited {
+  text-decoration: none;
+  color: #00a8e8;
+}
+a:hover {
+  text-decoration: underline;
+  color: #00a8e8;
+}
+a:active {
+  text-decoration: none;
 }
 
 .navbar {
   height: 70px;
   width: 100%;
   background: linear-gradient(180deg, #00171f 0, #007ea7);
-  position: relative;
+  position: fixed;
+  top: 0;
 }
 
 .navbar > .nav-header {
@@ -35,7 +60,8 @@
 .navbar > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
 }
 
 .navbar > .nav-links > .navlink {
@@ -49,8 +75,14 @@
   background-color: #00a8e8;
 }
 
-.home-container {
+.main-content {
+  margin-top: 70px;
+  padding: 3% 10%;
+}
+
+.home {
   background-color: #007ea7;
+  margin: 10%;
   text-align: center;
   align-items: center;
   color: #fff;
@@ -58,6 +90,7 @@
 
 .home-headline {
   margin-bottom: 1rem;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 .home-subheadline {
@@ -83,7 +116,7 @@
   }
   .navbar > .nav-btn > label:hover,
   .navbar #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #00a8e8;
   }
   .navbar > .nav-btn > label > span {
     display: block;
@@ -95,7 +128,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: #003459;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -115,14 +148,42 @@
   }
 }
 
-.home-headline {
-  font-family: 'Noto Sans Display', sans-serif;
-  font-size: 2rem;
-}
-
 .home-subheadline {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h1 {
+  font-family: 'Noto Sans Display', sans-serif;
+  color: #fff;
+}
+
+.projects-container {
+  border-radius: 20px;
+  padding: 0 45px;
+  background-color: #f9fafe;
+  max-width: 1170;
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+}
+
+.dueling-wizards {
+  display: flex;
+  flex-direction: row;
+}
+
+.wizards-image,
+.grant-image {
+  display: block;
+  float: left;
+  margin-right: 30px;
+  border: 5px solid #f9fafe;
 }
 
 .App-header {
