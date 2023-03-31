@@ -9,6 +9,11 @@ h1 {
   font-size: 36px;
 }
 
+.page-title {
+  font-family: 'Noto Sans Display', sans-serif;
+  color: #fff;
+}
+
 a:link {
   text-decoration: none;
   color: #00a8e8;
@@ -146,21 +151,36 @@ a:active {
     overflow-y: auto;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #007ea7, #00171f);
+}
+
+.footer > .footer-links > .footerlink {
+  padding: 25px 10px 13px 10px;
+}
+
+.footerlink > img {
+  height: 40px;
+}
 
 .home-subheadline {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
 }
 
-.projects {
+.projects,
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.projects h1 {
-  font-family: 'Noto Sans Display', sans-serif;
-  color: #fff;
 }
 
 .projects-container {
@@ -185,7 +205,11 @@ a:active {
   border: 5px solid #f9fafe;
 }
 
-.App-header {
+.on-this-day-subheadline {
+  font-family: 'EB Garamond', serif;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -200,17 +224,6 @@ a:active {
   color: #61dafb;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: fixed;
-  height: 60px;
-  width: 100%;
-  bottom: 0;
-  background: linear-gradient(180deg, #007ea7, #00171f);
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -218,4 +231,4 @@ a:active {
   to {
     transform: rotate(360deg);
   }
-}
+} */

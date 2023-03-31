@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Wizards from '../assets/basic-element-150png.png';
 import Grant from '../assets/ulysses-s-grant-revealed-logo-blue-150-transp.png';
 
-function Portfolio(params) {
+function Portfolio() {
   return (
     <div className="projects">
       <div className="page-title">

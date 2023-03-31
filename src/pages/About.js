@@ -49,22 +49,28 @@ function About() {
   // const loading = () => <h1>Loading...</h1>;
 
   return (
-    <div>
-      <h2>
-        Today in History - {monthsNames[today.getMonth()]} {day}
-      </h2>
-      {/* If events array is empty, render loading message */}
-      {events.length === 0 ? (
-        <h1>Please wait while data is loading...</h1>
-      ) : (
-        events.map((event, index) => {
-          return (
-            <p key={index}>
-              {event.year}: {event.text}
-            </p>
-          );
-        })
-      )}
+    <div className="about">
+      <div className="page-title">
+        <h1>About</h1>
+      </div>
+
+      <div className="on-this-day">
+        <h2 className="on-this-day-subheadline">
+          Historical Events On this Day - {monthsNames[today.getMonth()]} {day}
+        </h2>
+        {/* If events array is empty, render loading message */}
+        {events.length === 0 ? (
+          <h1>Please wait while data is loading...</h1>
+        ) : (
+          events.map((event, index) => {
+            return (
+              <p key={index}>
+                {event.year}: {event.text}
+              </p>
+            );
+          })
+        )}
+      </div>
     </div>
   );
 }
