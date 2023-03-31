@@ -38,7 +38,11 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 - Endrész, Mária. [Basic Element vector graphic](https://pixabay.com/vectors/basic-element-earth-air-water-fire-1663243/). Pixabay. (Free use license.)
 
+- [Favicon](https://favicon.io/).
+
 - Joseph, Jones Vinoth. [Pure CSS Responsive Navbar](https://codepen.io/jo_Geek/pen/xgbaEr). Codepen.io.
+
+- Pixel Bazaar. [Footer icons (via Iconfinder.com)](https://www.iconfinder.com/search/icons?family=flatilicious).
 
 ### README.md
 

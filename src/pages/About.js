@@ -53,13 +53,18 @@ function About() {
       <h2>
         Today in History - {monthsNames[today.getMonth()]} {day}
       </h2>
-      {events.map((event, index) => {
-        return (
-          <p key={index}>
-            {event.year}: {event.text}
-          </p>
-        );
-      })}
+      {/* If events array is empty, render loading message */}
+      {events.length === 0 ? (
+        <h1>Please wait while data is loading...</h1>
+      ) : (
+        events.map((event, index) => {
+          return (
+            <p key={index}>
+              {event.year}: {event.text}
+            </p>
+          );
+        })
+      )}
     </div>
   );
 }

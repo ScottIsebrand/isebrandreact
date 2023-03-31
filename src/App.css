@@ -77,12 +77,11 @@ a:active {
 
 .main-content {
   margin-top: 70px;
-  padding: 3% 10%;
+  padding: 3% 10% 100px;
 }
 
 .home {
   background-color: #007ea7;
-  margin: 10%;
   text-align: center;
   align-items: center;
   color: #fff;
