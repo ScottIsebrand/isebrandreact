@@ -220,24 +220,26 @@ a:active {
 
 .wizards-image,
 .grant-image,
-.world-history {
+.world-history,
+.greenwich-image,
+.reapers-stubbs-image {
   display: block;
   float: left;
   margin-right: 30px;
   border: 5px solid #f9fafe;
 }
 
-.about-image-container {
+/* .about-image-container {
   display: block;
   float: left;
   margin-right: 30px;
   border: 5px solid #f9fafe;
-}
+} */
 
-.about-image-caption {
+/* .about-image-caption {
   font-size: 13px;
   font-family: 'EB Garamond', serif;
-}
+} */
 
 .on-this-day-subheadline {
   font-family: 'EB Garamond', serif;
@@ -289,10 +291,10 @@ a:active {
   width: 100px;
 }
 
-.about-image-container {
+/* .about-image-container {
   float: unset;
   margin: auto;
-}
+} */
 /* .navbar > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }

@@ -8,14 +8,14 @@ function About() {
       <h1 className="main-title">About</h1>
       <div className="about-container">
         <h2>Bio</h2>
-        <div className="about-image-container">
-          <img
-            className="greenwich-image"
-            src={Greenwich}
-            alt="Greenwich London"
-          />
-          <div className="about-image-caption">In Greenwich, London, UK</div>
-        </div>
+        {/* <div className="about-image-container"> */}
+        <img
+          className="greenwich-image"
+          src={Greenwich}
+          alt="Greenwich London"
+        />
+        {/* <div className="about-image-caption">In Greenwich, London, UK</div> */}
+        {/* </div> */}
         <p>
           My Name is Scott Isebrand. I am currently completing a rigorous,
           immersive Software Engineering boot camp at Per Scholas in New York
@@ -52,16 +52,16 @@ function About() {
 
       <div className="about-container">
         <h2>Interests</h2>
-        <div className="about-image-container">
-          <img
-            className="reapers-stubbs-image"
-            src={Reapers}
-            alt="Reapers painting by George Stubbs, 1795"
-          />
-          <div className="about-image-caption">
+        {/* <div className="about-image-container"> */}
+        <img
+          className="reapers-stubbs-image"
+          src={Reapers}
+          alt="Reapers painting by George Stubbs, 1795"
+        />
+        {/* <div className="about-image-caption">
             <i>Reapers</i> by George Stubbs, 1795, New Haven
           </div>
-        </div>
+        </div> */}
         <p>
           Besides software development, I am also interested in history, early
           and classical music, British history and politics, and art and
