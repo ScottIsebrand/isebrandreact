@@ -1,12 +1,21 @@
 import { Link } from 'react-router-dom';
+import Greenwich from '../assets/sji-greenwich-260.jpg';
+import Reapers from '../assets/reapers-by-george-stubbs-260.jpg';
 
 function About() {
   return (
-    <div className="about">
-      <div className="page-title">
-        <h1>About</h1>
-      </div>
+    <div className="main-content about">
+      <h1 className="main-title">About</h1>
       <div className="about-container">
+        <h2>Bio</h2>
+        <div className="about-image-container">
+          <img
+            className="greenwich-image"
+            src={Greenwich}
+            alt="Greenwich London"
+          />
+          <div className="about-image-caption">In Greenwich, London, UK</div>
+        </div>
         <p>
           My Name is Scott Isebrand. I am currently completing a rigorous,
           immersive Software Engineering boot camp at Per Scholas in New York
@@ -39,9 +48,19 @@ function About() {
           HR, government relations, and insurance matters, and wrote and
           maintained the company's Standard Operating Procedures.
         </p>
-        <hr></hr>
-        <div className="hobbies">
-          <h2>Hobbies and Interests</h2>
+      </div>
+
+      <div className="about-container">
+        <h2>Interests</h2>
+        <div className="about-image-container">
+          <img
+            className="reapers-stubbs-image"
+            src={Reapers}
+            alt="Reapers painting by George Stubbs, 1795"
+          />
+          <div className="about-image-caption">
+            <i>Reapers</i> by George Stubbs, 1795, New Haven
+          </div>
         </div>
         <p>
           Besides software development, I am also interested in history, early
@@ -60,6 +79,7 @@ function About() {
           friends there. I am a member of the{' '}
           <Link
             className="text-link-regular"
+            title="Click to open Saint George's Society homepage in a new tab"
             to="https://www.stgeorgessociety.org/"
             target="_blank"
             rel="noreferrer"
@@ -70,6 +90,7 @@ function About() {
           New York branch of the
           <Link
             className="text-link-regular"
+            title="Click to open English-Speaking Union homepage in a new tab"
             to="https://www.esuus.org/newyork/"
             target="_blank"
             rel="noreferrer"
@@ -85,6 +106,7 @@ function About() {
           general and 18th President of the United States. I am a member of the{' '}
           <Link
             className="text-link-regular"
+            title="Click to open Grant Monument Association homepage in a new tab"
             to="https://grantstomb.org/"
             target="_blank"
             rel="noreferrer"
@@ -94,6 +116,7 @@ function About() {
           and a supporter of the{' '}
           <Link
             className="text-link-regular"
+            title="Click to open Grant Cottage homepage in a new tab"
             to="https://www.grantcottage.org/"
             target="_blank"
             rel="noreferrer"
@@ -113,8 +136,12 @@ function About() {
         <div className="on-this-day">
           <h2 className="on-this-day-subheadline">On This Day (#OTD)</h2>
           <p>
-            Head to my <Link to="/onthisday">On This Day page</Link> to discover
-            some of the significant events that occurred on this day in history.
+            Head to my{' '}
+            <Link title="Click go to the On This Day page" to="/onthisday">
+              On This Day page
+            </Link>{' '}
+            to discover some of the significant events that occurred on this day
+            in history.
           </p>
         </div>
       </div>

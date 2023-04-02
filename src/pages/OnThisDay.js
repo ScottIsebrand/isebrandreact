@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import WorldHistory from '../assets/world-history-150.png';
 
 function OnThisDay() {
   // Creating a state variable to hold the historical event data
@@ -49,20 +50,24 @@ function OnThisDay() {
   // const loading = () => <h1>Loading...</h1>;
 
   return (
-    <div className="onthisday">
-      <div className="page-title">
-        <h1>On This Day</h1>
-      </div>
+    <div className="main-content onthisday">
+      <h1 className="main-title">On This Day</h1>
+
       <div className="onthisday-container">
+        <h2>Historical Events API</h2>
+        <img
+          className="wizards-image"
+          src={WorldHistory}
+          alt="Four elements symbols"
+        />
+        <p>I love learning about history.</p>
         <p>
-          I love learning about history. Read below to discover some of the
-          historical events that occurred on this day (#OTD), courtesy of
-          Wikipedia's API.
+          Read below to discover some of the historical events that occurred on
+          this day (#OTD), courtesy of Wikipedia's "On This Day" API.
         </p>
         <div className="on-this-day">
           <h2 className="on-this-day-subheadline">
-            Historical Events On this Day - {monthsNames[today.getMonth()]}{' '}
-            {day}
+            {monthsNames[today.getMonth()]} {day}
           </h2>
           {/* If events array is empty, render loading message */}
           {events.length === 0 ? (

@@ -36,15 +36,27 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 - Adhikary, Tapas. "[3 quick ways to add fonts to your React app](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app)." GreenRoots Blog (via Hashnode).
 
-- Endrész, Mária. [Basic Element vector graphic](https://pixabay.com/vectors/basic-element-earth-air-water-fire-1663243/). Pixabay. (Free use license.)
-
 - [Favicon](https://favicon.io/).
 
 - Goodman, A. "[How to Create a Scroll To Top Button in React](https://www.kindacode.com/article/how-to-create-a-scroll-to-top-button-in-react/)." KindaCode.com.
 
+- "[How to Add Mouseover Text with HTML](https://www.w3docs.com/snippets/html/how-to-add-a-mouseover-text-with-html.html)." W3docs.
+
 - Joseph, Jones Vinoth. [Pure CSS Responsive Navbar](https://codepen.io/jo_Geek/pen/xgbaEr). Codepen.io.
 
-- Pixel Bazaar. [Footer icons (via Iconfinder.com)](https://www.iconfinder.com/search/icons?family=flatilicious).
+**Artwork/Graphics**
+
+Davison, John W. SJI monogram icon.
+
+- Endrész, Mária. [Basic Element vector graphic](https://pixabay.com/vectors/basic-element-earth-air-water-fire-1663243/). Pixabay. (Free use license.)
+
+- Freepick. [Curriculum Vitae icon](https://www.flaticon.com/free-icon/curriculum-vitae_909212). Flaticon. (Free use license.)
+
+- Monkik. [Geography free icon](https://www.flaticon.com/free-icon/geography_3749841). Flaticon. (Free use license.)
+
+### Miscellaneous
+
+- Mukati, Kartik. "[How to open PDF file in new tab using ReactJS ?](https://www.geeksforgeeks.org/how-to-open-pdf-file-in-new-tab-using-reactjs/)." GeeksforGeeks. Accessed April 1, 2023.
 
 ### README.md
 

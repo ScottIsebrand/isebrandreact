@@ -4,27 +4,28 @@ import Grant from '../assets/ulysses-s-grant-revealed-logo-blue-150-transp.png';
 
 function Portfolio() {
   return (
-    <div className="projects">
-      <div className="page-title">
-        <h1>Projects</h1>
-      </div>
+    <div className="main-content projects">
+      <h1 className="main-title">Projects</h1>
+
       <div className="projects-container">
         <div className="dueling-wizards">
           <h2>Dueling Wizards</h2>
         </div>
         <Link
+          title="Click to open Dueling Wizards game in a new tab"
           to="https://scottisebrand.github.io/dueling-wizards/"
           target="_blank"
           rel="noreferrer"
         >
           <img
-            className="wizards-image"
+            className="wizards-image projects-images"
             src={Wizards}
             alt="Four elements symbols"
           />
         </Link>
         <p>
           <Link
+            title="Click to open Dueling Wizards game in a new tab"
             to="https://scottisebrand.github.io/dueling-wizards/"
             target="_blank"
             rel="noreferrer"
@@ -48,11 +49,21 @@ function Portfolio() {
         <div className="grant-revealed">
           <h2>GrantRevealed.com</h2>
         </div>
-        <Link to="https://grantrevealed.com/" target="_blank" rel="noreferrer">
-          <img className="grant-image" src={Grant} alt="Ulysses S. Grant" />
+        <Link
+          title="Click to open Ulysses S. Grant Revealed homepage in a new tab"
+          to="https://grantrevealed.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className="grant-image projects-images"
+            src={Grant}
+            alt="Ulysses S. Grant"
+          />
         </Link>
         <p>
           <Link
+            title="Click to open Ulysses S. Grant Revealed homepage in a new tab"
             to="https://grantrevealed.com/"
             target="_blank"
             rel="noreferrer"

@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,6 +13,9 @@ import OnThisDay from './pages/OnThisDay';
 function App() {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
+
+  const params = useParams();
+  console.log(params);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -34,17 +38,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
+      {/* <div className="main-content"> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-          <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
-          <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />} />
 
-          <Route path="/onthisday" element={<OnThisDay />} />
-        </Routes>
-      </div>
+        <Route path="/onthisday" element={<OnThisDay />} />
+      </Routes>
+      {/* </div> */}
       <Footer />
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
