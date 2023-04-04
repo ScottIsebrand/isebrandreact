@@ -220,77 +220,79 @@ a:active {
 
 .wizards-image,
 .grant-image,
-.world-history,
-.greenwich-image,
-.reapers-stubbs-image {
+.world-history {
   display: block;
   float: left;
   margin-right: 30px;
-  border: 5px solid #f9fafe;
 }
 
-/* .about-image-container {
-  display: block;
+.about-image-container {
+  display: flex;
+  flex-direction: column;
   float: left;
   margin-right: 30px;
-  border: 5px solid #f9fafe;
-} */
+}
 
-/* .about-image-caption {
+.about-image-caption {
   font-size: 13px;
   font-family: 'EB Garamond', serif;
-} */
+}
 
 .on-this-day-subheadline {
   font-family: 'EB Garamond', serif;
 }
 
-.navbar > .nav-btn {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.navbar > .nav-btn > label {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 13px;
-}
-.navbar > .nav-btn > label:hover,
-.navbar #nav-check:checked ~ .nav-btn > label {
-  background-color: #00a8e8;
-}
-.navbar > .nav-btn > label > span {
-  display: block;
-  width: 25px;
-  height: 10px;
-  border-top: 2px solid #eee;
-}
-.navbar > .nav-links {
-  position: absolute;
-  display: block;
-  width: 100%;
-  background-color: #003459;
-  height: 0px;
-  transition: all 0.2s ease-in;
-  overflow-y: hidden;
-  top: 70px;
-  left: 0px;
-}
-.navbar > .nav-links > a {
-  display: block;
-  width: 100%;
-}
-.navbar > .mobile-menu {
-  height: calc(100vh - 70px);
-  overflow-y: auto;
-}
+@media (max-width: 668px) {
+  .navbar > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar > .nav-btn > label:hover,
+  .navbar #nav-check:checked ~ .nav-btn > label {
+    background-color: #00a8e8;
+  }
+  .navbar > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navbar > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #003459;
+    height: 0px;
+    transition: all 0.2s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0px;
+  }
+  .navbar > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > .mobile-menu {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
 
-.projects-images {
-  width: 100px;
+  .projects-images {
+    width: 100px;
+  }
+  .about-image-container {
+    margin: auto;
+    float: unset;
+  }
 }
-
 /* .about-image-container {
   float: unset;
   margin: auto;
