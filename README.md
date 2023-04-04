@@ -26,6 +26,12 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Improvements
+
+- Indicate on-page state on navigation bar.
+
+- Possibly refactor to be a single-page scrolling website instead of a multi-page (React routing) site.
+
 ## Acknowledgements
 
 ### API
@@ -46,7 +52,7 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 **Artwork/Graphics**
 
-Davison, John W. SJI monogram icon.
+- Davison, John W. SJI monogram icon.
 
 - Endrész, Mária. [Basic Element vector graphic](https://pixabay.com/vectors/basic-element-earth-air-water-fire-1663243/). Pixabay. (Free use license.)
 
