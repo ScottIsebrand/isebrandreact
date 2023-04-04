@@ -32,6 +32,10 @@ https://benevolent-youtiao-efa0f5.netlify.app/
 
 - Possibly refactor to be a single-page scrolling website instead of a multi-page (React routing) site.
 
+- Email contact form.
+
+- Integrate/add a blog.
+
 ## Acknowledgements
 
 ### API
