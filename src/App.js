@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,9 +12,6 @@ import OnThisDay from './pages/OnThisDay';
 function App() {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
-
-  const params = useParams();
-  console.log(params);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {

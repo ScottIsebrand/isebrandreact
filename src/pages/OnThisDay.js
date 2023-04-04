@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import WorldHistory from '../assets/world-history-150.png';
 
 function OnThisDay() {
-  // Creating a state variable to hold the historical event data
+  // Creating a state variable to hold the historical event data. 'events' default value is an empty array.
   const [events, setEvents] = useState([]);
   // Creating object (dictionary/library) named 'months' to find name of current month
   const monthsNames = {
@@ -38,16 +38,12 @@ function OnThisDay() {
             'isebrandreact (https://benevolent-youtiao-efa0f5.netlify.app/)',
         },
       });
-
+      // The value of 'data' is the API response
       const data = await response.json();
-      console.log(data);
       setEvents(data.events);
     };
     fetchData();
   }, [url]);
-
-  // Function to return JSX if we have data in state ???
-  // const loading = () => <h1>Loading...</h1>;
 
   return (
     <div className="main-content onthisday">
@@ -55,11 +51,7 @@ function OnThisDay() {
 
       <div className="onthisday-container">
         <h2>Historical Events API</h2>
-        <img
-          className="wizards-image"
-          src={WorldHistory}
-          alt="Four elements symbols"
-        />
+        <img className="globe-image" src={WorldHistory} alt="globe" />
         <p>I love learning about history.</p>
         <p>
           Read below to discover some of the historical events that occurred on
@@ -76,7 +68,7 @@ function OnThisDay() {
             events.map((event, index) => {
               return (
                 <p key={index}>
-                  {event.year}: {event.text}
+                  <span className="year">{event.year}</span>: {event.text}
                 </p>
               );
             })

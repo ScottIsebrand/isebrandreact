@@ -220,7 +220,8 @@ a:active {
 
 .wizards-image,
 .grant-image,
-.world-history {
+.world-history,
+.globe-image {
   display: block;
   float: left;
   margin-right: 30px;
@@ -238,8 +239,17 @@ a:active {
   font-family: 'EB Garamond', serif;
 }
 
+.greenwich-image,
+.reapers-stubbs-image {
+  box-shadow: 5px 5px 3px #8c8e8f;
+}
+
 .on-this-day-subheadline {
   font-family: 'EB Garamond', serif;
+}
+
+.year {
+  font-weight: 700;
 }
 
 @media (max-width: 668px) {
