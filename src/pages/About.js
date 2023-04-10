@@ -26,10 +26,10 @@ function About() {
         <p>
           I am looking for opportunities to bring my developer skills and
           previous work experience together to be a productive part of a
-          front-end team.
+          software development team.
         </p>
         <p>
-          Before my transition to tech, I worked as a marketer first in
+          Before my transition to tech, I worked as a marketer--first in
           educational publishing and then for a special events venue and
           production company, later serving as that company's Chief Operating
           Officer.
@@ -38,14 +38,14 @@ function About() {
           I oversaw the production of the company's website--plotting its page
           structure, writing all of its copy, and working with the developers
           from start to finish. In the process, I learned the WordPress skills
-          to maintain and update the website going forward.
+          needed to maintain and update the website going forward.
         </p>
         <p>
           As COO, I coordinated the three-person management team, working to
           drive the team towards consensus and communicating closely on a daily
-          basis with ownership in writing and verbally, consistently
-          demonstrating strong adherence to confidentiality. I also oversaw IT,
-          HR, government relations, and insurance matters, and wrote and
+          basis with ownership, consistently demonstrating strong adherence to
+          confidentiality. I oversaw IT, HR, government and community relations,
+          budgeting, P&L reporting, and insurance matters, and wrote and
           maintained the company's Standard Operating Procedures.
         </p>
       </div>
@@ -65,18 +65,16 @@ function About() {
         <p>
           Besides software development, I am also interested in history, early
           and classical music, British history and politics, and art and
-          architecture. I strongly considered a career as a historian, and
-          earned a master's degree from Yale University towards that end. My
-          studies focused heavily on ecclesiastical history, including sacred
-          art and architecture.
+          architecture. I considered a career as a historian, and earned a
+          master's degree from Yale University towards that end.
         </p>
         <p>
-          In college, I interned at the House of Commons of the United Kingdom
-          as a Research Assistant for the Labour Party Spokesman on Trade and
-          Industry and subsequently as an assistant to the Bishop of London's
-          Chaplain to the Homeless (Church of England). I have been to the U.K.
-          several times since then and always enjoy spending time with my
-          friends there. I am a member of the{' '}
+          I interned at the House of Commons of the United Kingdom as a Research
+          Assistant for the Labour Party Spokesman on Trade and Industry and
+          subsequently as an assistant to the Bishop of London's Chaplain to the
+          Homeless (Church of England). I have been to the U.K. several times
+          since then and always enjoy spending time with my friends there. I am
+          a member of the{' '}
           <Link
             className="text-link-regular"
             title="Click to open Saint George's Society homepage in a new tab"
@@ -102,8 +100,18 @@ function About() {
         </p>
         <p>
           I am also interested in the American Civil War. I recently launched a
-          website at GrantRevealed.com, about Ulysses S. Grant, Civil War
-          general and 18th President of the United States. I am a member of the{' '}
+          website at{' '}
+          <Link
+            className="text-link-regular"
+            title="Click to open Ulysses S. Grant Revealed in a new tab"
+            to="https://grantrevealed.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GrantRevealed.com
+          </Link>
+          , about Ulysses S. Grant, Civil War general and 18th President of the
+          United States. I am a member of the{' '}
           <Link
             className="text-link-regular"
             title="Click to open Grant Monument Association homepage in a new tab"
@@ -127,9 +135,9 @@ function About() {
         </p>
         <p>
           In my free time if I'm not listening to history or BBC Radio 4
-          podcasts, I am probably either with my partner and eating out with
-          friends, watching sci-fi, fantasy, or British shows or movies, or
-          perusing Instagram accounts featuring landscape, wildlife, or
+          podcasts, I am probably with my partner and either eating out with
+          friends or watching sci-fi, fantasy, or British shows or movies, or I
+          am perusing Instagram accounts featuring landscape, wildlife, or
           architecture photography.{' '}
         </p>
         <hr></hr>
