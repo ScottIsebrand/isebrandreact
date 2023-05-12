@@ -137,8 +137,8 @@ function About() {
           In my free time if I'm not listening to history or BBC Radio 4
           podcasts, I am probably with my partner and either eating out with
           friends or watching sci-fi, fantasy, or British shows or movies, or I
-          am perusing Instagram accounts featuring landscape, wildlife, or
-          architecture photography.{' '}
+          am perusing Instagram accounts featuring landscape, wildlife, art, or
+          architecture.{' '}
         </p>
         <hr></hr>
         <div className="on-this-day">
